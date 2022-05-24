@@ -5,78 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/682a9f9b0f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Just Nails</title>
 </head>
 
 <body class="index">
     
-    <header>
-       
-            <img class="logo" src="Imagenes/logo.jpeg" alt="logo">
+        <header>
+
+            <img class="logo" src="/imagenes/logo.jpeg" alt="logo">
             <h1 class="animate__animated animate__bounce">
                 Just Nails Sofia
             </h1>
-        
 
-        <nav class="principal">
-            <ul>
-                <li class="prin">
-                    <a href="Pages/sobremi.html">Sobre mi</a>
-                </li>
-                <li class="prin">
-                    <a href="Pages/horarios.html">Horarios</a>
-                </li>
-                <li class="prin">
-                    <a href="Pages/servicios.html">Servicios</a>
-                </li>
-                <li class="prin">
-                    <a href="Pages/promociones.html">Promociones</a>
-                </li>
-            </ul>
-        </nav>
 
-    </header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
 
-    <main class="mainJust">
-        <div>
-            <nav class="subMenu">
-                <ul class="menuSub">
-                    <li class="mainMenu1"><a href=url destino>
-                    <img class="img1" src="imagenes/Trabajo realizado.jpg" width="250" height="300" alt="trabajo realizado">
-                    </a>
-                     </li>
-                    <li class="mainMenu2">
-                        <a href="url destino">
-                            <img class="img2" src="imagenes/esmaltes.jpeg" width="250" height="300"   alt="esmaltes">
-                        </a>
-                    </li>
-                    <li class="mainMenu3"><a href="url destino">
-                        <img class="img3" src="imagenes/playa.jpeg"width="250" height="300" alt="playa">
-                    </a>
-                    </li>
-                </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a class="navbar-brand" href="pages/sobremi.html">Sobre mi</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/horarios.html">Horarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/promociones.html">Promociones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </main>
 
-    <footer>
-        <h5>Mis redes sociales</h5>
-            
-         <div class="redSocial">
+        </header>
+
+        <main class="mainJust">
+            <div>
+                <nav class="subMenu">
+                    <ul class="menuSub">
+                        <li class="mainMenu1"><a href="pages/TrabajosRealizados.html">
+                                <img class="img1" src="imagenes/Trabajo realizado.jpg" width="250" height="300"
+                                    alt="trabajo realizado">
+                            </a>
+                        </li>
+                        <li class="mainMenu2">
+                            <a href="url destino">
+                                <img class="img2" src="imagenes/esmaltes.jpeg" width="250" height="300" alt="esmaltes">
+                            </a>
+                        </li>
+                        <li class="mainMenu3"><a href="url destino">
+                                <img class="img3" src="imagenes/playa nueva.jpeg" width="250" height="300" alt="playa">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+        <footer> <div>
+            <div class="titFoo">
+                <h2>Mis redes sociales</h2>
+            </div>
+            <div class="redSocial">
                 <a href="https://www.facebook.com/sofia.ferrero.39" target="blank" class="fa fa-facebook"></a>
+                <a href="mailto:sofiafer015@gmail.com" target="blank"><i class="fa-solid fa-envelope-open-text "></i></a>
                 <a href="https://www.instagram.com/just_nails_sofia/" target="blank" class="fa fa-instagram"></a>
-                <a href="mailto:sofiafer015@gmail.com" target="blank"><i class="fa-solid fa-inbox"></i></a>
+                
 
             </div>
             <div class="ultimo">
-            <h6>Desarrollado por</h6>
-            <a href="https://www.instagram.com/leotrias22" target="blank">Leonardo Trias</a>
+                <p>Todos los derechos reservados© | Desarrollado por <a href="https://www.instagram.com/leotrias22" target="blank">Leonardo Trias</a></p>
+               
+            </div>
         </div>
-    </footer>
-   
+        </footer>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

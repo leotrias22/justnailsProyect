@@ -255,8 +255,8 @@ h5 {
  */
 .index {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "header"
+    grid-template-areas: 
+        "header"
         "header"
         "header"
         "mainJust"
@@ -266,7 +266,16 @@ h5 {
         "footer"
         "footer";
     height: 100vh;
+    width: 100%;
     background-image: url(../imagenes/organic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bodyTr{
+    background-image: url(../imagenes/imagespink.jfif);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -327,32 +336,12 @@ header {
 }
 
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-
-}
-
-nav ul .prin {
-    background-color: whitesmoke;
-    border-radius: 1.0rem;
-    padding: 0.3rem;
-    margin: 0.4rem;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: coral;
-}
-
-
 .mainJust .subMenu .menuSub {
-    display: grid;
+    display: flex;
     width: 100%;
     justify-content: space-evenly;
-    grid-template-areas: "mainMenu1 mainMenu2 mainMenu3";
     margin-top: 200px;
+    list-style-type: none;
 }
 
 .mainMenu1:hover {
@@ -368,42 +357,34 @@ nav ul li a {
 }
 
 footer {
-    position: fixed;
-    bottom: 0px;
-    width: 98%;
+    flex-wrap: wrap;
+    align-self: flex-end;
     background-color: rgb(216, 110, 216);
     height: 100px;
     border-style: double;
-    grid-area: footer;
-    margin: 1rem;
+    grid-area: footer;}
 
-}
-
-h5 {
-    text-align: center;
-    color: rgb(239, 238, 240);
-}
-
-footer .redSocial {
+.titFoo{
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: center;
 
-footer .redSocial a {
-    font-size: 25px;
-    background-color: rgb(255, 255, 255);
-    color: blue;
-    border-radius: 10px;
 }
-
-.ultimo {
+.titFoo h2{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.redSocial{
     display: flex;
-    margin-top: 15px;
+    justify-content:center;
+}
+.redSocial a{
+    padding: 0px 20px 0 20px;
+font-size: 25px;
+}
+
+.ultimo{
+    display: flex;
     justify-content: end;
-}
-
-body {
-    background-color: blueviolet;
 }
 
 
@@ -508,6 +489,10 @@ body {
 .agendateAqui {
     margin: 15px;
     grid-area: agendateAqui;
+}
+.unias{
+    max-width: 20rem;
+    max-height: 26rem;
 }
 
 
