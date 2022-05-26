@@ -5,254 +5,8 @@
 
 }
 
-/*  
-body {
-    background-image: url(../imagenes/organic.jpeg);
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 2fr);
-}
 
 
-header {
-    background-color: rgb(237, 126, 237);
-    padding: 15px;
-    height: 150px;
-    border-style: double;
-}
-
-
-.titJust {
-    text-align: center;
-    grid-column: 2/5;
-    font-size: 70px;
-    color: rgb(104, 22, 74);
-    font-family: cursive
-}
-
-.logo {
-    border-radius: 200px;
-    width: 8rem;
-
-}
-
-
-nav {
-    list-style-type: none;
-    grid-column: 5/5;
-
-}
-
-nav ul li {
-    list-style-type: none;
-    background-color: pink;
-    margin: 8px;
-    display: inline-block;
-    font-size: 30px;
-    border-radius: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgb(244, 90, 90);
-
-}
-
-.agendate {
-    width: 200px;
-    height: 100pxh1 q;
-    right: 760px;
-    bottom: 200px;
-
-}
-
-.subMenu {
-    list-style-type: none;
-    display: inline;
-    left: 600px;
-
-}
-
-.segLi {
-    color: chocolate;
-    font-size: larger;
-    font-style: italic;
-
-}
-
-
-
-footer {
-    background-color: rgb(216, 110, 216);
-    display: grid;
-    height: 130px;
-    border-style: double;
-    margin: 0%;
-}
-h6 {
-    text-align: center;
-}
-
-.tituloSm {
-    background-color: rgb(216, 22, 164);
-    border-radius: 30px;
-    left: 350px;
-    display: inline-block;
-    font-weight: 1000px;
-    font-size: 70px;
-}
-
-.textoUno {
-    color: blueviolet;
-    font-size: x-large;
-}
-
-.tituloDos {
-    color: rgb(216, 22, 164);
-    border-radius: 30px;
-    left: 650px;
-    font-weight: 1000;
-    font-size: 50px
-}
-
-.textoDos {
-    color: blueviolet;
-    font-size: x-large;
-
-}
-
-h5 {
-    text-align: center;
-    font-size: x-large;
-}
-
-.menuHor {
-    bottom: 260px;
-}
-
-.tituloHor {
-    text-align: center;
-    color: blueviolet;
-    bottom: 200px;
-    text-decoration-line: underline;
-    font-size: 60px;
-}
-
-.agendateAqui {
-    text-align: center;
-    font-size: 40px;
-
-}
-
-.redesHor {
-    top: 180px;
-}
-
-.serv {
-    text-align: center;
-    color: blueviolet;
-    font-size: 60px;
-}
-
-.tecnicas {
-    height: 1200px;
-    width: 700px;
-    left: 550px;
-}
-
-.videoUno {
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.dryMa {
-    color: blueviolet;
-    background-color: aliceblue;
-    width: 150px;
-    border-radius: 250px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.textoDry {
-    width: 400px;
-    height: 200px;
-    padding-top: 50px;
-    font-size: larger;
-    color: blueviolet;
-}
-
-.videoDos {
-    left: 1200px;
-    padding-bottom: 80px;
-}
-
-.esmSemi {
-    color: blueviolet;
-    background-color: aliceblue;
-    width: 180px;
-    border-radius: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px
-}
-
-.textoEsm {
-    width: 400px;
-    height: 200px;
-    padding-top: 50px;
-    font-size: larger;
-    color: blueviolet;
-}
-
-.videoTres {
-    padding-top: 50px;
-    padding-bottom: 100px;
-
-}
-
-.kapping {
-    color: blueviolet;
-    background-color: aliceblue;
-    width: 100px;
-    border-radius: 120px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.textoKap {
-    width: 400px;
-    height: 200px;
-    padding-top: 50px;
-    font-size: larger;
-    color: blueviolet;
-
-}
-
-.titPromo {
-    text-align: center;
-    color: blueviolet;
-    font-size: 70px;
-    text-decoration: underline;
-}
-
-.promoMay {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: blueviolet;
-
-}
-
-.textoPromo {
-    font-size: 30px;
-    color: rebeccapurple;
-}
-
- */
 .index {
     display: grid;
     grid-template-areas: 
@@ -274,6 +28,8 @@ h5 {
     background-size: cover;
 }
 
+
+
 .bodyTr{
     background-image: url(../imagenes/imagespink.jfif);
     background-repeat: no-repeat;
@@ -281,6 +37,8 @@ h5 {
     background-attachment: fixed;
     background-size: cover;
 }
+
+
 
 
 header {
@@ -327,7 +85,6 @@ header {
 
 
 .animate__animated {
-    display: flex;
     text-align: center;
     font-size: 5rem;
     font-family: cursive;
@@ -388,15 +145,9 @@ font-size: 25px;
 }
 
 
-.mainSm {
-    display: grid;
-    grid-template-areas: ". tituloSm ."
-        "textoSm textoSm textoSm"
-        "tituloDos tituloDos tituloDos"
-        "textoDos textoDos textoDos"
-        "tituloTres tituloTres tituloTres"
-        "textoTres textoTres textoTres";
-    background-image: url(../imagenes/back.jpg);
+.backSm {
+    
+background-image: url(../imagenes/back.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
@@ -404,41 +155,33 @@ font-size: 25px;
     background-size: cover;
 }
 
-.prueba {
-    display: grid;
-    align-items: center;
-    grid-column: 2/3;
-}
-
 .tituloSm {
     border-radius: 50px;
     padding: 4px;
-    background-color: rgba(254, 253, 254, 0.703);
     text-align: center;
-    color: rgb(219, 136, 219);
+    color: rgb(243, 239, 239);
     font-size: 3rem;
-    grid-area: tituloSm;
+    margin: 3rem 0 3rem 0;
+ 
 
 }
 
 .tituloDos {
-    background-color: rgba(240, 248, 255, 0.671);
     border-radius: 50px;
     padding: 2px;
     text-align: center;
-    color: rgb(219, 136, 219);
+    color: rgb(243, 239, 239);
     font-size: 3rem;
-    grid-area: tituloDos;
+    margin: 3rem 0 3rem 0;
 }
 
 .tituloTres {
-    background-color: rgba(240, 248, 255, 0.671);
     border-radius: 50px;
     padding: 4px;
     text-align: center;
-    color: rgb(219, 136, 219);
+    color: rgb(243, 239, 239);
     font-size: 3rem;
-    grid-area: tituloTres;
+    margin: 3rem 0 3rem 0;
 }
 
 .textoUno {
@@ -446,27 +189,25 @@ font-size: 25px;
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    grid-area: textoSm;
+    margin: 3rem 0 3rem 0;
 }
 
 .textoDos {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    grid-area: textoDos;
+    margin: 3rem 0 3rem 0;
 }
 
 .textoTres {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    grid-area: textoTres;
+    margin: 3rem 0 3rem 0;
 }
 
-.mainHorarios {
-    display: grid;
-    grid-template-areas: "tituloHor tituloHor tituloHor"
-        "agendateAqui agendateAqui agendateAqui";
+.mainHorarios {display: flex;
+    justify-content: center;
     background-image: url(../imagenes/72337421-hermosas-uñas-postizas-muestra-de-esmalte-de-uñas-marco-de-texto-aislado-sobre-fondo-blanco.webp);
     height: 100vh;
     background-repeat: no-repeat;
@@ -477,18 +218,16 @@ font-size: 25px;
 }
 
 .tituloHor {
-    height: 200px;
-    color: pink;
-    background-color: #6b0ebc;
-    display: grid;
-    justify-content: center;
-    margin-top: 200px;
-    grid-area: tituloHor;
+height: 230px;
+    color: rgb(154, 27, 115);
+margin-top: 200px;
+background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73))
+    
 }
 
 .agendateAqui {
-    margin: 15px;
-    grid-area: agendateAqui;
+    margin: 50px;
+   
 }
 .unias{
     max-width: 20rem;
@@ -566,3 +305,15 @@ font-size: 25px;
 
     }
 }
+
+
+.servicios{
+  
+    background-image: url(../imagenes/servicios.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;}
+
+  
