@@ -1,319 +1,155 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
-}
-
-
-
 .index {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "header"
-        "header"
-        "mainJust"
-        "mainJust"
-        "mainJust"
-        "footer"
-        "footer"
-        "footer";
-    height: 100vh;
-    width: 100%;
-    background-image: url(../imagenes/organic.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-
-.bodyTr{
-    background-image: url(../imagenes/imagespink.jfif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-
-
-header {
+  display: grid;
+  grid-template-areas: "header" "header" "header" "mainJust" "mainJust" "mainJust" "footer" "footer" "footer";
+  height: 100vh;
+  width: 100%;
+  background-image: url(../imagenes/organic.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .index header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
-    background-color: rgb(237, 126, 237);
-    background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
+    background-color: #ed7eed;
+    background-image: linear-gradient(#d31dbe, #e8e849);
     margin: 1rem;
     height: 200px;
-    border-style: double;
-}
-
-.mainJust {
-    display: grid;
-    grid-area: mainJust;
-}
-
-.logoTit {
-    display: flex;
-}
-
-.logo {
-    animation-name: latido;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 2.0s;
-    display: flex;
-    border-radius: 200px;
-    width: 10%;
-    margin: 0.1rem;
-}
+    border-style: double; }
+    .index header .logo {
+      animation-name: latido;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2.0s;
+      display: flex;
+      border-radius: 200px;
+      width: 10%;
+      margin: 0.1rem; }
+    .index header .animate__animated {
+      text-align: center;
+      font-size: 5rem;
+      font-family: cursive;
+      color: #9a1b73;
+      margin-left: 3rem; }
 
 @keyframes latido {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
-
-
-.animate__animated {
-    text-align: center;
-    font-size: 5rem;
-    font-family: cursive;
-    color: rgb(154, 27, 115);
-    margin-left: 3rem;
-}
-
-
-.mainJust .subMenu .menuSub {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 200px;
-    list-style-type: none;
-}
-
-.mainMenu1:hover {
-    transform: scale(1.2);
-}
-
-.mainMenu2:hover {
-    transform: scale(1.2);
-}
-
-.mainMenu3:hover {
-    transform: scale(1.2);
-}
-
-footer {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .index footer {
     flex-wrap: wrap;
     align-self: flex-end;
-    background-color: rgb(216, 110, 216);
-    height: 100px;
+    background-color: #d86ed8;
+    height: 120px;
     border-style: double;
-    grid-area: footer;}
+    grid-area: footer; }
+    .index footer .titFoo {
+      display: flex;
+      justify-content: center; }
+    .index footer .redSocial {
+      display: flex;
+      justify-content: center; }
+      .index footer .redSocial a {
+        padding: 0px 20px 0 20px;
+        font-size: 25px; }
+    .index footer .ultimo {
+      display: flex;
+      justify-content: end; }
 
-.titFoo{
-    display: flex;
-    justify-content: center;
-
-}
-.titFoo h2{
-    color: whitesmoke;
-    font-size: 20px;
-}
-.redSocial{
-    display: flex;
-    justify-content:center;
-}
-.redSocial a{
-    padding: 0px 20px 0 20px;
-font-size: 25px;
-}
-
-.ultimo{
-    display: flex;
-    justify-content: end;
-}
-
-
+/*hasta aqui va el index.html*/
 .backSm {
-    
-background-image: url(../imagenes/back.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+  background-image: url(../imagenes/back.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .backSm header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    background-color: #ed7eed;
+    background-image: linear-gradient(#d31dbe, #e8e849);
+    margin: 1rem;
+    height: 200px;
+    border-style: double; }
+    .backSm header .logo {
+      animation-name: latido;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2.0s;
+      display: flex;
+      border-radius: 200px;
+      width: 10%;
+      margin: 0.1rem; }
+    .backSm header .animate__animated {
+      text-align: center;
+      font-size: 5rem;
+      font-family: cursive;
+      color: #9a1b73;
+      margin-left: 3rem; }
 
-.tituloSm {
+@keyframes latido {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .backSm main div .tituloSm {
     border-radius: 50px;
     padding: 4px;
     text-align: center;
-    color: rgb(243, 239, 239);
+    color: #f3efef;
     font-size: 3rem;
-    margin: 3rem 0 3rem 0;
- 
-
-}
-
-.tituloDos {
+    margin: 3rem 0 3rem 0; }
+  .backSm main div .tituloDos {
     border-radius: 50px;
     padding: 2px;
     text-align: center;
-    color: rgb(243, 239, 239);
+    color: #f3efef;
     font-size: 3rem;
-    margin: 3rem 0 3rem 0;
-}
-
-.tituloTres {
+    margin: 3rem 0 3rem 0; }
+  .backSm main div .tituloTres {
     border-radius: 50px;
     padding: 4px;
     text-align: center;
-    color: rgb(243, 239, 239);
+    color: #f3efef;
     font-size: 3rem;
-    margin: 3rem 0 3rem 0;
-}
-
-.textoUno {
-
+    margin: 3rem 0 3rem 0; }
+  .backSm main div .textoUno {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    margin: 3rem 0 3rem 0;
-}
-
-.textoDos {
+    margin: 3rem 0 3rem 0; }
+  .backSm main div .textoDos {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    margin: 3rem 0 3rem 0;
-}
-
-.textoTres {
+    margin: 3rem 0 3rem 0; }
+  .backSm main div .textoTres {
     color: whitesmoke;
     text-align: center;
     font-size: 2rem;
-    margin: 3rem 0 3rem 0;
-}
-
-.mainHorarios {display: flex;
-    justify-content: center;
-    background-image: url(../imagenes/72337421-hermosas-uñas-postizas-muestra-de-esmalte-de-uñas-marco-de-texto-aislado-sobre-fondo-blanco.webp);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
-
-.tituloHor {
-height: 230px;
-    color: rgb(154, 27, 115);
-margin-top: 200px;
-background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73))
-    
-}
-
-.agendateAqui {
-    margin: 50px;
-   
-}
-.unias{
-    max-width: 20rem;
-    max-height: 26rem;
-}
-
-
-
-@media screen and (max-width:768px) {
-    .titJust {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        display: grid;
-    }
-
-}
-
-@media screen and (max-width:480px) {
-
-    .botonMenu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 3rem;
-        height: 3rem;
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        background-color: darkmagenta;
-        border: 0;
-        color: white;
-        cursor: pointer;
-
-    }
-
-    .botonMenu:focus+.principal {
-        transform: translateX(0rem);
-    }
-
-    nav.principal {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 15rem;
-        background-color: #6b0ebc;
-        transform: translateX(15rem);
-        transition: 15s all;
-    }
-
-    nav.principal ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    nav.principal a {
-        display: block;
-        color: #400b4f;
-        padding: 1rem;
-        transition: .5s all;
-    }
-
-    nav.principal a:hover {
-        text-decoration: none;
-        background-color: #948C75;
-    }
-}
-
-@media screen and (min-width:480) {
-    header .botonMenu .fa fa-bars {
-        display: none;
-
-    }
-}
-
-
-.servicios{
-  
-    background-image: url(../imagenes/servicios.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;}
-
-  
+    margin: 3rem 0 3rem 0; }
+  .backSm footer {
+    flex-wrap: wrap;
+    align-self: flex-end;
+    background-color: #d86ed8;
+    height: 120px;
+    border-style: double;
+    grid-area: footer; }
+    .backSm footer .titFoo {
+      display: flex;
+      justify-content: center; }
+    .backSm footer .redSocial {
+      display: flex;
+      justify-content: center; }
+      .backSm footer .redSocial a {
+        padding: 0px 20px 0 20px;
+        font-size: 25px; }
+    .backSm footer .ultimo {
+      display: flex;
+      justify-content: end; }
