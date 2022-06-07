@@ -1,3 +1,11 @@
+@charset "UTF-8";
+.index footer, .backSm footer, .mainHorarios footer, .servicios footer, .promociones footer {
+  flex-wrap: wrap;
+  align-self: flex-end;
+  background-color: #d86ed8;
+  height: 120px;
+  border-style: double; }
+
 .index {
   display: grid;
   grid-template-areas: "header" "header" "header" "mainJust" "mainJust" "mainJust" "footer" "footer" "footer";
@@ -27,12 +35,15 @@
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
-    .index header .animate__animated {
+    .index header h1 {
       text-align: center;
       font-size: 5rem;
       font-family: cursive;
       color: #9a1b73;
       margin-left: 3rem; }
+    @media (max-width: 990px) {
+      .index header h1 {
+        font-size: 2rem; } }
 
 @keyframes latido {
   from {
@@ -40,11 +51,6 @@
   to {
     transform: scale(1.1); } }
   .index footer {
-    flex-wrap: wrap;
-    align-self: flex-end;
-    background-color: #d86ed8;
-    height: 120px;
-    border-style: double;
     grid-area: footer; }
     .index footer .titFoo {
       display: flex;
@@ -86,12 +92,15 @@
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
-    .backSm header .animate__animated {
+    .backSm header h1 {
       text-align: center;
       font-size: 5rem;
       font-family: cursive;
       color: #9a1b73;
       margin-left: 3rem; }
+    @media (max-width: 990px) {
+      .backSm header h1 {
+        font-size: 2rem; } }
 
 @keyframes latido {
   from {
@@ -134,22 +143,221 @@
     text-align: center;
     font-size: 2rem;
     margin: 3rem 0 3rem 0; }
-  .backSm footer {
-    flex-wrap: wrap;
-    align-self: flex-end;
-    background-color: #d86ed8;
-    height: 120px;
-    border-style: double;
+  .backSm footer .titFoo {
+    display: flex;
+    justify-content: center; }
+  .backSm footer .redSocial {
+    display: flex;
+    justify-content: center; }
+    .backSm footer .redSocial a {
+      padding: 0px 20px 0 20px;
+      font-size: 25px; }
+  .backSm footer .ultimo {
+    display: flex;
+    justify-content: end; }
+
+/* hasta aqui fue "Sobre mi"*/
+.mainHorarios {
+  display: grid;
+  grid-template-areas: "header" "header" "header" "main" "main" "main" "footer" "footer" "footer";
+  background-image: url(../imagenes/72337421-hermosas-uñas-postizas-muestra-de-esmalte-de-uñas-marco-de-texto-aislado-sobre-fondo-blanco.webp);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .mainHorarios header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    background-color: #ed7eed;
+    background-image: linear-gradient(#d31dbe, #e8e849);
+    margin: 1rem;
+    height: 200px;
+    border-style: double; }
+    .mainHorarios header .logo {
+      animation-name: latido;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2.0s;
+      display: flex;
+      border-radius: 200px;
+      width: 10%;
+      margin: 0.1rem; }
+    .mainHorarios header h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-family: cursive;
+      color: #9a1b73;
+      margin-left: 3rem; }
+    @media (max-width: 990px) {
+      .mainHorarios header h1 {
+        font-size: 2rem; } }
+
+@keyframes latido {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .mainHorarios .tituloHor {
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    color: #9a1b73;
+    margin-top: 200px;
+    background-image: linear-gradient(#d31dbe, #e8e849); }
+  .mainHorarios .agendateAqui {
+    margin-top: 40px; }
+  .mainHorarios footer {
     grid-area: footer; }
-    .backSm footer .titFoo {
+    .mainHorarios footer .titFoo {
       display: flex;
       justify-content: center; }
-    .backSm footer .redSocial {
+    .mainHorarios footer .redSocial {
       display: flex;
       justify-content: center; }
-      .backSm footer .redSocial a {
+      .mainHorarios footer .redSocial a {
         padding: 0px 20px 0 20px;
         font-size: 25px; }
-    .backSm footer .ultimo {
+    .mainHorarios footer .ultimo {
       display: flex;
       justify-content: end; }
+
+/*hasta aqui fue Horarios*/
+.servicios {
+  background-image: url(../imagenes/servicios.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .servicios header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    background-color: #ed7eed;
+    background-image: linear-gradient(#d31dbe, #e8e849);
+    margin: 1rem;
+    height: 200px;
+    border-style: double; }
+    .servicios header .logo {
+      animation-name: latido;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2.0s;
+      display: flex;
+      border-radius: 200px;
+      width: 10%;
+      margin: 0.1rem; }
+    .servicios header h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-family: cursive;
+      color: #9a1b73;
+      margin-left: 3rem; }
+    @media (max-width: 990px) {
+      .servicios header h1 {
+        font-size: 2rem; } }
+
+@keyframes latido {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .servicios footer .titFoo {
+    display: flex;
+    justify-content: center; }
+  .servicios footer .redSocial {
+    display: flex;
+    justify-content: center; }
+    .servicios footer .redSocial a {
+      padding: 0px 20px 0 20px;
+      font-size: 25px; }
+  .servicios footer .ultimo {
+    display: flex;
+    justify-content: end; }
+
+/*hasta aqui fue servicios*/
+.promociones {
+  background-image: url(../imagenes/belu.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .promociones header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    background-color: #ed7eed;
+    background-image: linear-gradient(#d31dbe, #e8e849);
+    margin: 1rem;
+    height: 200px;
+    border-style: double; }
+    .promociones header .logo {
+      animation-name: latido;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 2.0s;
+      display: flex;
+      border-radius: 200px;
+      width: 10%;
+      margin: 0.1rem; }
+    .promociones header h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-family: cursive;
+      color: #9a1b73;
+      margin-left: 3rem; }
+    @media (max-width: 990px) {
+      .promociones header h1 {
+        font-size: 2rem; } }
+
+@keyframes latido {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .promociones main .titPromo {
+    display: flex;
+    justify-content: center; }
+    .promociones main .titPromo .promo {
+      background-color: #d4e5f4;
+      font-size: 60px;
+      color: #060101;
+      border-radius: 40px;
+      padding: 5px; }
+  .promociones main .promoMay {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px; }
+    .promociones main .promoMay .promo {
+      background-color: #d4e5f4;
+      font-size: 30px;
+      color: #060101;
+      border-radius: 40px;
+      padding: 5px; }
+  .promociones main .textoPromo {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    color: #060101;
+    font-size: 20px;
+    background-color: #d4e5f4;
+    border: radius 40px; }
+  .promociones footer .titFoo {
+    display: flex;
+    justify-content: center; }
+  .promociones footer .redSocial {
+    display: flex;
+    justify-content: center; }
+    .promociones footer .redSocial a {
+      padding: 0px 20px 0 20px;
+      font-size: 25px; }
+  .promociones footer .ultimo {
+    display: flex;
+    justify-content: end; }
+
+/* hasta aqui fue promociones*/
