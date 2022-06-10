@@ -26,6 +26,17 @@
     margin: 1rem;
     height: 200px;
     border-style: double; }
+    .index header nav div div ul a {
+      background-color: pink;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 5px;
+      color: #970577; }
+    .index header nav div div ul li {
+      background-color: pink;
+      border-radius: 20px;
+      margin: 5px;
+      color: #970577; }
     .index header .logo {
       animation-name: latido;
       animation-iteration-count: infinite;
@@ -83,6 +94,17 @@
     margin: 1rem;
     height: 200px;
     border-style: double; }
+    .backSm header nav div div ul a {
+      background-color: pink;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 5px;
+      color: #970577; }
+    .backSm header nav div div ul li {
+      background-color: pink;
+      border-radius: 20px;
+      margin: 5px;
+      color: #970577; }
     .backSm header .logo {
       animation-name: latido;
       animation-iteration-count: infinite;
@@ -176,6 +198,17 @@
     margin: 1rem;
     height: 200px;
     border-style: double; }
+    .mainHorarios header nav div div ul a {
+      background-color: pink;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 5px;
+      color: #970577; }
+    .mainHorarios header nav div div ul li {
+      background-color: pink;
+      border-radius: 20px;
+      margin: 5px;
+      color: #970577; }
     .mainHorarios header .logo {
       animation-name: latido;
       animation-iteration-count: infinite;
@@ -242,6 +275,17 @@
     margin: 1rem;
     height: 200px;
     border-style: double; }
+    .servicios header nav div div ul a {
+      background-color: pink;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 5px;
+      color: #970577; }
+    .servicios header nav div div ul li {
+      background-color: pink;
+      border-radius: 20px;
+      margin: 5px;
+      color: #970577; }
     .servicios header .logo {
       animation-name: latido;
       animation-iteration-count: infinite;
@@ -297,6 +341,17 @@
     margin: 1rem;
     height: 200px;
     border-style: double; }
+    .promociones header nav div div ul a {
+      background-color: pink;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 5px;
+      color: #970577; }
+    .promociones header nav div div ul li {
+      background-color: pink;
+      border-radius: 20px;
+      margin: 5px;
+      color: #970577; }
     .promociones header .logo {
       animation-name: latido;
       animation-iteration-count: infinite;

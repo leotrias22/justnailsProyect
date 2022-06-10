@@ -31,6 +31,31 @@
         background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
        @include medidas (1rem, 200px);
         border-style: double;
+        
+        nav{
+          div{
+              div{
+                  ul{
+                      a{
+                          background-color: pink;
+                          border-radius: 20px;
+                          padding: 5px;
+                          margin: 5px ;
+                          color: rgb(151, 5, 119);
+                      }
+                      li{
+                        background-color: pink;
+                        border-radius: 20px;
+                    
+                        margin: 5px ;
+                        color: rgb(151, 5, 119);
+                      }
+                  }
+              }
+          }
+
+            
+        }
 
         .logo{ 
              animation-name: latido;
@@ -114,6 +139,30 @@
                 background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
                 @include medidas (1rem, 200px);
                 border-style: double;
+                nav{
+                    div{
+                        div{
+                            ul{
+                                a{
+                                    background-color: pink;
+                                    border-radius: 20px;
+                                    padding: 5px;
+                                    margin: 5px ;
+                                    color: rgb(151, 5, 119);
+                                }
+                                li{
+                                  background-color: pink;
+                                  border-radius: 20px;
+                              
+                                  margin: 5px ;
+                                  color: rgb(151, 5, 119);
+                                }
+                            }
+                        }
+                    }
+          
+                      
+                  }
         
                 .logo{ 
                      animation-name: latido;
@@ -263,6 +312,30 @@
         background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
         @include medidas (1rem, 200px);
         border-style: double;
+        nav{
+            div{
+                div{
+                    ul{
+                        a{
+                            background-color: pink;
+                            border-radius: 20px;
+                            padding: 5px;
+                            margin: 5px ;
+                            color: rgb(151, 5, 119);
+                        }
+                        li{
+                          background-color: pink;
+                          border-radius: 20px;
+                      
+                          margin: 5px ;
+                          color: rgb(151, 5, 119);
+                        }
+                    }
+                }
+            }
+  
+              
+          }
 
         .logo{ 
              animation-name: latido;
@@ -359,6 +432,30 @@ footer {
         background-image:linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
         @include medidas (1rem, 200px);
         border-style: double;
+        nav{
+            div{
+                div{
+                    ul{
+                        a{
+                            background-color: pink;
+                            border-radius: 20px;
+                            padding: 5px;
+                            margin: 5px ;
+                            color: rgb(151, 5, 119);
+                        }
+                        li{
+                          background-color: pink;
+                          border-radius: 20px;
+                      
+                          margin: 5px ;
+                          color: rgb(151, 5, 119);
+                        }
+                    }
+                }
+            }
+  
+              
+          }
 
         .logo{ 
              animation-name: latido;
@@ -443,6 +540,30 @@ footer {
         background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
         @include medidas (1rem, 200px);
         border-style: double;
+        nav{
+            div{
+                div{
+                    ul{
+                        a{
+                            background-color: pink;
+                            border-radius: 20px;
+                            padding: 5px;
+                            margin: 5px ;
+                            color: rgb(151, 5, 119);
+                        }
+                        li{
+                          background-color: pink;
+                          border-radius: 20px;
+                      
+                          margin: 5px ;
+                          color: rgb(151, 5, 119);
+                        }
+                    }
+                }
+            }
+  
+              
+          }
 
         .logo{ 
              animation-name: latido;
