@@ -4,25 +4,34 @@
 @import "utilites/extend";
 
 
-.index{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "header"
-        "header"
-        "mainJust"
-        "mainJust"
-        "mainJust"
-        "footer"
-        "footer"
-        "footer";
+.bodyIndex{
     height: 100vh;
     background-image: url(../imagenes/organic.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+
+.index{
+
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        height: 100vh;
+    background-image: url(../imagenes/organic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
     
     header{ @include flex;
         grid-area: header;
@@ -92,6 +101,8 @@
         
 
     }
+
+    
     }
     footer {
         @extend %footer;
@@ -118,7 +129,8 @@
         }
         }
         }
-    
+        
+    }
     
     
     /*hasta aqui va el index.html*/
@@ -288,17 +300,11 @@
 .mainHorarios {
     display: grid;
     grid-template-areas: 
-        "header header"
-        "header header"
-        "header header"
-        "main main"
-        "main main"
-        "main main"
-        "footer footer"
-        "footer footer"
-        "footer footer";
+        "header"
+        "main"
+        "footer";
     background-image: url(../imagenes/72337421-hermosas-uñas-postizas-muestra-de-esmalte-de-uñas-marco-de-texto-aislado-sobre-fondo-blanco.webp);
-    height: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -416,13 +422,17 @@ footer {
 
 }
 /*hasta aqui fue Horarios*/
-.servicios{
-    background-image: url(../imagenes/servicios.jpg);
+
+.bodyServ{ background-image: url(../imagenes/servicios.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+
+}
+.servicios{
+  
 
     header{ @include flex;
         grid-area: header;
@@ -524,13 +534,17 @@ footer {
 
 
 /*hasta aqui fue servicios*/
-.promociones{
-    background-image: url(../imagenes/belu.jpeg);
+
+.bodyPromo{ background-image: url(../imagenes/belusport2.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    
+
+.promociones{
+    
 
     header{ @include flex;
         grid-area: header;
@@ -604,10 +618,11 @@ main{
     .titPromo{
         display: flex;
         justify-content: center;
+        ;
         .promo{
-            background-color: rgb(212, 229, 244);
+            background-color: $color-titulo;
             font-size: 60px;
-            color: rgb(6, 1, 1);
+            color: pink;
             border-radius: 40px;
             padding: 5px;
         }
@@ -619,9 +634,9 @@ main{
         justify-content: center;
         margin-top: 57px;
         .promo{
-            background-color: rgb(212, 229, 244);
+            background-color: $color-titulo;
             font-size: 30px;
-            color: rgb(6, 1, 1);
+            color: pink;
             border-radius: 40px;
             padding: 5px;
         }
@@ -630,9 +645,9 @@ main{
     .textoPromo{
         margin-top: 250px;
         margin-bottom: 100px;
-        color: rgb(6, 1, 1);
-        font-size: 20px;
-        background-color: rgb(212, 229, 244);
+        color: pink;
+        font-size: 25px;
+        background-color: $color-titulo;
         border: radius 40px;
 
     }
@@ -663,6 +678,7 @@ footer {
     }
     }
 
+}
 }
 /* hasta aqui fue promociones*/
 body{
@@ -772,6 +788,88 @@ footer {
     
 }
 }
+
+/* hasta aqui fue trabajos realizados*/
+
+.bodyCons{background-image: url(../imagenes/imagespink.jfif);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    header{@include flex;
+        grid-area: header;
+        background-color: $color-principal;
+        background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
+        @include medidas (1rem, 200px);
+        border-style: double;
+        nav{
+            div{
+                div{
+                    ul{
+                        a{
+                            background-color: pink;
+                            border-radius: 20px;
+                            padding: 5px;
+                            margin: 5px ;
+                            color: rgb(151, 5, 119);
+                        }
+                        li{
+                          background-color: pink;
+                          border-radius: 20px;
+                      
+                          margin: 5px ;
+                          color: rgb(151, 5, 119);
+                        }
+                    }
+                }
+            }
+  
+              
+          }
+
+        .logo{ 
+             animation-name: latido;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 2.0s;
+            display: flex;
+            border-radius: $medida-principal*2;
+            width: 10%;
+            margin: 0.1rem;
+
+        }
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+            font-family: cursive;
+            color: $color-titulo;
+            margin-left: 3rem;
+        }
+        @media (max-width: 990px) {
+            h1{
+                font-size: 2rem
+            }
+            
+        }
+        @keyframes latido {
+            from {
+                transform: scale(1);
+            }
+        
+            to {
+                transform: scale(1.1);
+            }
+       
+        
+
+    }
+}
+
+    }
+
+
 
 
 
