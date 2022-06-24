@@ -2,6 +2,7 @@
 @import "utilites/variables";
 @import "utilites/mixins";
 @import "utilites/extend";
+@import "utilites/mediaqueries";
 
 
 *{
@@ -11,7 +12,6 @@
 }
 
 .bodyIndex{
-    height: 100vh;
     background-image: url(../imagenes/organic.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -19,18 +19,13 @@
     background-size: cover;
 
 .index{
-
+    height: 100vh;
     display: grid;
     grid-template-areas: 
         "header"
         "main"
         "footer";
-        height: 100vh;
-    background-image: url(../imagenes/organic.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    
 
     
     header{ @include flex;
@@ -536,7 +531,7 @@ footer {
 /*hasta aqui fue servicios*/
 
 .bodyPromo{ background-image: url(../imagenes/belusport2.jpg);
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -792,11 +787,22 @@ footer {
 /* hasta aqui fue trabajos realizados*/
 
 .bodyCons{background-image: url(../imagenes/imagespink.jfif);
-    height: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    .consu{ 
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+            main{
+                margin: 60px
+            }
+
+    }
 
     header{@include flex;
         grid-area: header;
@@ -834,12 +840,12 @@ footer {
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             animation-duration: 2.0s;
-            display: flex;
             border-radius: $medida-principal*2;
             width: 10%;
-            margin: 0.1rem;
+            margin: 0.1rem;}
 
-        }
+
+        
         h1 {
             text-align: center;
             font-size: 5rem;
@@ -868,9 +874,63 @@ footer {
 }
 
     }
+    main{ display: flex;
+        align-items: center;
+        flex-direction: column;
+        .titCon{
+            margin-bottom: 30px;
+            font-family: cursive;
+            color: $color-titulo;
+            background-color: rgb(171, 140, 200);
+            border-radius: 25px;          
+        }
+        .texCon{
+            margin-bottom: 30px;
+            font-family: cursive;
+            color: $color-titulo;
+            background-color: rgb(171, 140, 200);
+            border-radius: 25px;          
+            
+        }
+        .slide{
+            
+            img{
+                height: 50vh;
+            
+            
+            }
+        }
+    }
+    
 
 
+footer {
+    @extend %footer;
+    grid-area: footer;
+   
 
+    .titFoo{
+        display: flex;
+        justify-content: center;
+    
+    }
+    .redSocial{
+        display: flex;
+        justify-content:center;
+    
+     a{
+        padding: 0px 20px 0 20px;
+    font-size: 25px;
+    }
+    
+    }        
+     .ultimo{
+        display: flex;
+        justify-content: end;
+    }
+    }
+        
+    
 
 
     
