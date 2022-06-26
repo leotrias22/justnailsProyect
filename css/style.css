@@ -6,10 +6,6 @@
   height: 130px;
   border-style: double; }
 
-@media (max-width: 680px) {
-  .logo {
-    width: 30%; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +51,9 @@
         border-radius: 200px;
         width: 10%;
         margin: 0.1rem; }
+      @media (max-width: 680px) {
+        .bodyIndex .index header .logo {
+          width: 30%; } }
       .bodyIndex .index header h1 {
         text-align: center;
         font-size: 5rem;
@@ -123,6 +122,9 @@
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
+    @media (max-width: 680px) {
+      .backSm header .logo {
+        width: 30%; } }
     .backSm header h1 {
       text-align: center;
       font-size: 5rem;
@@ -227,6 +229,9 @@
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
+    @media (max-width: 680px) {
+      .mainHorarios header .logo {
+        width: 30%; } }
     .mainHorarios header h1 {
       text-align: center;
       font-size: 5rem;
@@ -305,6 +310,9 @@
     border-radius: 200px;
     width: 10%;
     margin: 0.1rem; }
+  @media (max-width: 680px) {
+    .servicios header .logo {
+      width: 30%; } }
   .servicios header h1 {
     text-align: center;
     font-size: 5rem;
@@ -374,6 +382,9 @@
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
+    @media (max-width: 680px) {
+      .bodyPromo .promociones header .logo {
+        width: 30%; } }
     .bodyPromo .promociones header h1 {
       text-align: center;
       font-size: 5rem;
@@ -466,6 +477,9 @@ body .bodyTr {
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
+    @media (max-width: 680px) {
+      body .bodyTr header .logo {
+        width: 30%; } }
     body .bodyTr header h1 {
       text-align: center;
       font-size: 5rem;
@@ -538,6 +552,9 @@ body .bodyTr {
       border-radius: 200px;
       width: 10%;
       margin: 0.1rem; }
+    @media (max-width: 680px) {
+      .bodyCons header .logo {
+        width: 30%; } }
     .bodyCons header h1 {
       text-align: center;
       font-size: 5rem;
