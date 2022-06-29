@@ -1,15 +1,10 @@
 @charset "UTF-8";
-.bodyIndex .index footer, .backSm footer, .mainHorarios footer, .servicios footer, .bodyPromo .promociones footer, body .bodyTr footer, footer {
+.bodyIndex .index footer, footer, .mainHorarios footer, .servicios footer, .bodyPromo .promociones footer, body .bodyTr footer, .bodyDq footer {
   flex-wrap: wrap;
   align-self: flex-end;
   background-color: #d86ed8;
   height: 130px;
   border-style: double; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 .bodyIndex {
   background-image: url(../imagenes/organic.jpeg);
@@ -108,86 +103,95 @@
       padding: 5px;
       margin: 5px;
       color: #970577; }
-    .backSm header nav div div ul li {
+    .backSm header nav div div li {
       background-color: pink;
       border-radius: 20px;
       margin: 5px;
       color: #970577; }
-    .backSm header .logo {
-      animation-name: latido;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 2.0s;
-      display: flex;
-      border-radius: 200px;
-      width: 10%;
-      margin: 0.1rem; }
-    @media (max-width: 680px) {
-      .backSm header .logo {
-        width: 30%; } }
-    .backSm header h1 {
-      text-align: center;
-      font-size: 5rem;
-      font-family: cursive;
-      color: #9a1b73;
-      margin-left: 3rem; }
-    @media (max-width: 990px) {
-      .backSm header h1 {
-        font-size: 2rem; } }
+  .backSm .logo {
+    animation-name: latido;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.0s;
+    display: flex;
+    border-radius: 200px;
+    width: 10%;
+    margin: 0.1rem; }
+  @media (max-width: 680px) {
+    .backSm .logo {
+      width: 30%; } }
+  .backSm h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: cursive;
+    color: #9a1b73;
+    margin-left: 3rem; }
+  @media (max-width: 990px) {
+    .backSm h1 {
+      font-size: 2rem; } }
 
 @keyframes latido {
   from {
     transform: scale(1); }
   to {
     transform: scale(1.1); } }
-  .backSm main div .tituloSm {
-    border-radius: 50px;
-    padding: 4px;
-    text-align: center;
-    color: #f3efef;
-    font-size: 3rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm main div .tituloDos {
-    border-radius: 50px;
-    padding: 2px;
-    text-align: center;
-    color: #f3efef;
-    font-size: 3rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm main div .tituloTres {
-    border-radius: 50px;
-    padding: 4px;
-    text-align: center;
-    color: #f3efef;
-    font-size: 3rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm main div .textoUno {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm main div .textoDos {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm main div .textoTres {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 2rem;
-    margin: 3rem 0 3rem 0; }
-  .backSm footer .titFoo {
-    display: flex;
-    justify-content: center; }
-  .backSm footer .redSocial {
-    display: flex;
-    justify-content: center; }
-    .backSm footer .redSocial a {
-      padding: 0px 20px 0 20px;
-      font-size: 25px; }
-  .backSm footer .ultimo {
-    display: flex;
-    justify-content: end; }
+
+main div .tituloSm {
+  border-radius: 50px;
+  padding: 4px;
+  text-align: center;
+  color: #f3efef;
+  font-size: 3rem;
+  margin: 3rem 0 3rem 0; }
+
+main div .tituloDos {
+  border-radius: 50px;
+  padding: 2px;
+  text-align: center;
+  color: #f3efef;
+  font-size: 3rem;
+  margin: 3rem 0 3rem 0; }
+
+main div .tituloTres {
+  border-radius: 50px;
+  padding: 4px;
+  text-align: center;
+  color: #f3efef;
+  font-size: 3rem;
+  margin: 3rem 0 3rem 0; }
+
+main div .textoUno {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0 3rem 0; }
+
+main div .textoDos {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0 3rem 0; }
+
+main div .textoTres {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0 3rem 0; }
+
+footer .titFoo {
+  display: flex;
+  justify-content: center; }
+
+footer .redSocial {
+  display: flex;
+  justify-content: center; }
+  footer .redSocial a {
+    padding: 0px 20px 0 20px;
+    font-size: 25px; }
+
+footer .ultimo {
+  display: flex;
+  justify-content: end; }
 
 /* hasta aqui fue "Sobre mi"*/
 .mainHorarios {
@@ -604,3 +608,89 @@ footer {
   footer .ultimo {
     display: flex;
     justify-content: end; }
+
+/* hasta aqui fue consultorio*/
+.bodyDq {
+  background-image: url(../imagenes/pink-target-map-poinet-pin-duotone-style-pink-background-3d-rendering_476612-.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .bodyDq .contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "header header header header" " section section main main" " section section main main" "footer footer footer footer" "footer footer footer footer"; }
+    .bodyDq .contenedor header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      grid-area: header;
+      background-color: #ed7eed;
+      background-image: linear-gradient(#d31dbe, #e8e849);
+      margin: 1rem;
+      height: 200px;
+      border-style: double; }
+      .bodyDq .contenedor header nav div div ul a {
+        background-color: pink;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 5px;
+        color: #970577; }
+      .bodyDq .contenedor header nav div div ul li {
+        background-color: pink;
+        border-radius: 20px;
+        margin: 5px;
+        color: #970577; }
+      .bodyDq .contenedor header .logo {
+        animation-name: latido;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2.0s;
+        border-radius: 200px;
+        width: 10%;
+        margin: 0.1rem; }
+      @media (max-width: 680px) {
+        .bodyDq .contenedor header .logo {
+          width: 30%; } }
+      .bodyDq .contenedor header h1 {
+        text-align: center;
+        font-size: 5rem;
+        font-family: cursive;
+        color: #9a1b73;
+        margin-left: 3rem; }
+      @media (max-width: 990px) {
+        .bodyDq .contenedor header h1 {
+          font-size: 2rem; } }
+
+@keyframes latido {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+  .bodyDq main {
+    grid-area: main;
+    margin: 100px; }
+    .bodyDq main p {
+      font-size: 40px; }
+  .bodyDq section {
+    grid-area: section;
+    margin: 100px; }
+    @media (max-width: 1000px) {
+      .bodyDq section iframe iframe {
+        height: 150px;
+        width: 200px; } }
+  .bodyDq footer {
+    grid-area: footer; }
+    .bodyDq footer .titFoo {
+      display: flex;
+      justify-content: center; }
+    .bodyDq footer .redSocial {
+      display: flex;
+      justify-content: center; }
+      .bodyDq footer .redSocial a {
+        padding: 0px 20px 0 20px;
+        font-size: 25px; }
+    .bodyDq footer .ultimo {
+      display: flex;
+      justify-content: end; }

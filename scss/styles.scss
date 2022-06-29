@@ -2,14 +2,8 @@
 @import "utilites/variables";
 @import "utilites/mixins";
 @import "utilites/extend";
-@import "utilites/mediaqueries";
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .bodyIndex{
     background-image: url(../imagenes/organic.jpeg);
@@ -18,7 +12,7 @@
     background-attachment: fixed;
     background-size: cover;
 
-.index{
+    .index{
     height: 100vh;
     display: grid;
     grid-template-areas: 
@@ -304,8 +298,7 @@
             
 
         
-        
-        
+       
 /* hasta aqui fue "Sobre mi"*/
 
 
@@ -978,8 +971,159 @@ footer {
         justify-content: end;
     }
     }
+    /* hasta aqui fue consultorio*/
+
+    .bodyDq{
+         background-image: url(../imagenes/pink-target-map-poinet-pin-duotone-style-pink-background-3d-rendering_476612-.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
         
-    
+        .contenedor{
+            display: grid;
+            height: 100vh;
+            grid-template-columns:repeat(4, 1fr) ;
+            grid-template-areas: "header header header header"
+                                 "header header header header"
+                                 " section section main main"
+                                 " section section main main"
+                                 "footer footer footer footer"
+                                 "footer footer footer footer";
+                                 header{@include flex;
+                                    grid-area: header;
+                                    background-color: $color-principal;
+                                    background-image: linear-gradient(rgb(211, 29, 190), rgb(232, 232, 73));
+                                    @include medidas (1rem, 200px);
+                                    border-style: double;
+                                    nav{
+                                        div{
+                                            div{
+                                                ul{
+                                                    a{
+                                                        background-color: pink;
+                                                        border-radius: 20px;
+                                                        padding: 5px;
+                                                        margin: 5px ;
+                                                        color: rgb(151, 5, 119);
+                                                    }
+                                                    li{
+                                                      background-color: pink;
+                                                      border-radius: 20px;
+                                                  
+                                                      margin: 5px ;
+                                                      color: rgb(151, 5, 119);
+                                                    }
+                                                }
+                                            }
+                                        }
+                              
+                                          
+                                      }
+                            
+                                    .logo{ 
+                                         animation-name: latido;
+                                        animation-iteration-count: infinite;
+                                        animation-timing-function: linear;
+                                        animation-duration: 2.0s;
+                                        border-radius: $medida-principal*2;
+                                        width: 10%;
+                                        margin: 0.1rem;}
+                            
+                                        @media (max-width:680px) {
+                                .logo{
+                                    width: 30%;
+                                }
+                                
+                            }
+                                        
+                            
+                            
+                                    
+                                    h1 {
+                                        text-align: center;
+                                        font-size: 5rem;
+                                        font-family: cursive;
+                                        color: $color-titulo;
+                                        margin-left: 3rem;
+                                    }
+                                    @media (max-width: 990px) {
+                                        h1{
+                                            font-size: 2rem
+                                        }
+                                        
+                                    }
+                                    @keyframes latido {
+                                        from {
+                                            transform: scale(1);
+                                        }
+                                    
+                                        to {
+                                            transform: scale(1.1);
+                                        }
+                                   
+                                    
+                            
+                                }
+                            }
+                            
+                                }
+                                main{
+                                    grid-area: main;
+                                    margin: 100px;
+                                    p{
+                                        font-size: 40px;
+                                    }
+                                }
+                                section{
+                                    grid-area: section;
+                                    margin: 100px;
+                                    iframe{
+                                        @media (max-width:1000px) {
+                                            iframe{
+                                                height: 150px;
+                                                width: 200px;
+                                        
+                                            }
+                                            
+                                        }
+                                    }
 
 
-    
+                                }
+                                footer {
+                                    @extend %footer;
+                                    grid-area: footer;
+                                   
+                                
+                                    .titFoo{
+                                        display: flex;
+                                        justify-content: center;
+                                    
+                                    }
+                                    .redSocial{
+                                        display: flex;
+                                        justify-content:center;
+                                    
+                                     a{
+                                        padding: 0px 20px 0 20px;
+                                    font-size: 25px;
+                                    }
+                                    
+                                    }        
+                                     .ultimo{
+                                        display: flex;
+                                        justify-content: end;
+                                    }
+
+
+        }
+    }
+
+        
+
+
+
+
+
+
