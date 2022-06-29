@@ -525,8 +525,6 @@ body .bodyTr {
   .bodyCons .consu {
     display: grid;
     grid-template-areas: "header" "main" "footer"; }
-    .bodyCons .consu main {
-      margin: 60px; }
   .bodyCons header {
     display: flex;
     justify-content: space-between;
@@ -578,7 +576,8 @@ body .bodyTr {
 main {
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 60px; }
   main .titCon {
     margin-bottom: 30px;
     font-family: cursive;
